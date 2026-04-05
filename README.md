@@ -85,16 +85,6 @@ The interface is designed to feel like a **modern SaaS platform**, not just a te
 
 ---
 
-## 🔐 Security & Privacy
-
-- Argon2 password hashing  
-- Secure session handling  
-- Multi-tenant architecture (per teacher)  
-- Minimal student data (Student ID only)  
-- Designed with **FERPA compliance in mind**
-
----
-
 ## 📦 Data Model
 
 Each submission stores:
