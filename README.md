@@ -77,7 +77,7 @@ The interface is designed to feel like a **modern SaaS platform**, not just a te
 
 ## 🏗️ Tech Stack
 
-- **Frontend:** React + Custom Editor  
+- **Frontend:** Vue + Custom Editor  
 - **Backend:** Node.js (Express)  
 - **Database:** PostgreSQL  
 - **Infrastructure:** AWS (S3, EC2)  
