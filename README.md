@@ -21,7 +21,6 @@ A modern SaaS platform designed for teachers to create a **controlled, distracti
 This platform provides a **structured writing environment** where students can focus while the system quietly enforces rules:
 
 - No tab switching  
-- No copy-paste  
 - No exiting fullscreen  
 
 Violations are **tracked, logged, and enforced automatically**.
