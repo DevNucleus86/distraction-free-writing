@@ -1,74 +1,162 @@
-# Frontend Mentor - In-browser markdown editor solution
+![WriteGuard Assignments view: essay editor with word count, autosave, and tab-switch monitoring](public/images/Assignments.png)
 
-This is a solution to the [In-browser markdown editor challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/inbrowser-markdown-editor-r16TrrQX9). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+# ✍️ Distraction-Free Writing Platform
 
-## Table of contents
+A modern SaaS platform designed for teachers to create a **controlled, distraction-restricted writing environment** for students.
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [Built with](#built-with)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+> Built to encourage authentic writing in the AI era — not by surveillance, but by smart constraints.
 
-## Overview
+---
 
-### The challenge
+## 📸 Product Preview
 
-Users should be able to:
+![Writing Environment](./docs/screenshot.png)
 
-- Create, Read, Update, and Delete markdown documents
-- Name and save documents to be accessed as needed
-- Edit the markdown of a document and see the formatted preview of the content
-- View a full-page preview of the formatted content
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Use localStorage to save the current state in the browser that persists when the browser is refreshed
+> A full-featured writing environment with sidebar navigation, real-time monitoring, and distraction control.
 
-### Screenshot
+---
 
-![](./src/assets/screen-shot-dark.jpg) ![](./src/assets/screen-shot-light.jpg)
+## 🚀 Overview
 
-### Links
+This platform provides a **structured writing environment** where students can focus while the system quietly enforces rules:
 
-- Solution URL: [https://github.com/HarrisonPeace/in-browser-markdown-editor](https://github.com/HarrisonPeace/in-browser-markdown-editor)
-- Live Site URL: [https://harrison-peace-markdown-editor.netlify.app/](https://harrison-peace-markdown-editor.netlify.app/)
+- No tab switching  
+- No copy-paste  
+- No exiting fullscreen  
 
-## Built with
+Violations are **tracked, logged, and enforced automatically**.
 
-- Semantic HTML5 markup
-- SCSS custom properties
-- [Vue](https://vuejs.org/) - JS library
-- [Pinia](https://pinia.vuejs.org/) - State management
-- [Bootstrap](https://getbootstrap.com/) - For styles
+---
 
-## Author
+## 🧩 Key Features
 
-- LinkedIn - [harrison-peace](https://www.linkedin.com/in/harrison-peace/)
+### 🧑‍🏫 Teacher Dashboard
+- Create assignments with prompts  
+- Configure warning limits  
+- Distribute via unique URL  
+- View submissions in dashboard  
+- Export:
+  - CSV (metadata)
+  - ZIP (.txt responses)
 
-## Commands
+---
 
-### Project setup
+### 🧑‍🎓 Student Writing Experience
+- No login required  
+- Fullscreen writing interface  
+- Live word counter  
+- Autosave (every 10–15s)  
+- Manual or auto submission  
 
-```
-yarn install
-```
+---
 
-### Compiles and hot-reloads for development
+### ⚠️ Violation Detection Engine
+The core system monitors:
 
-```
-yarn serve
-```
+- Tab switching / window blur  
+- Fullscreen exit  
+- Paste attempts (blocked instantly)  
 
-### Compiles and minifies for production
+**Behavior:**
+- Violations are timestamped  
+- Warning count accumulates  
+- Limit reached → **auto-submit + editor lock**
 
-```
-yarn build
-```
+---
 
-### Lints and fixes files
+## 🎨 UI Highlights
 
-```
-yarn lint
-```
+The interface is designed to feel like a **modern SaaS platform**, not just a text editor:
+
+- 📚 Sidebar navigation (Assignments, Students, Submissions)  
+- ✨ Clean, distraction-free editor  
+- ⚡ Real-time warning indicators  
+- 💾 Autosave feedback  
+- 🌙 Dark mode professional design  
+
+---
+
+## 🏗️ Tech Stack
+
+- **Frontend:** React + Custom Editor  
+- **Backend:** Node.js (Express)  
+- **Database:** PostgreSQL  
+- **Infrastructure:** AWS (S3, EC2)  
+
+---
+
+## 🔐 Security & Privacy
+
+- Argon2 password hashing  
+- Secure session handling  
+- Multi-tenant architecture (per teacher)  
+- Minimal student data (Student ID only)  
+- Designed with **FERPA compliance in mind**
+
+---
+
+## 📦 Data Model
+
+Each submission stores:
+
+- Teacher ID  
+- Assignment ID  
+- Student ID  
+- Response text  
+- Word count  
+- Start + submission timestamps  
+- Submission type (manual / auto)  
+- Violation logs (type + timestamp)
+
+---
+
+## ⚠️ Browser Limitations
+
+This system is designed to **reduce misuse, not eliminate it completely**:
+
+- Fullscreen cannot be permanently enforced  
+- Advanced users may bypass restrictions  
+- OS-level actions may not always trigger events  
+
+> In practice: highly effective in real classroom environments.
+
+---
+
+## 🛠️ Development Approach
+
+This platform is built on top of my previous work:
+
+- In-browser editor architecture  
+- Local-first state management  
+- Real-time input handling  
+
+This allows:
+- Faster development  
+- Higher reliability  
+- Reduced technical risk  
+
+---
+
+## 📅 MVP Scope
+
+- Writing environment  
+- Violation detection  
+- Dashboard + export  
+- Deployment  
+
+---
+
+## 🔮 Future Enhancements
+
+- SSO (Google Classroom)  
+- Advanced analytics  
+- AI-assisted signals  
+- Classroom session monitoring  
+
+---
+
+## 💡 Philosophy
+
+> Make writing simple.  
+> Make distractions difficult.  
+> Keep everything else invisible.
